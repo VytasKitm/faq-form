@@ -58,13 +58,13 @@ const Questions = () => {
             <>
             <div className="row container align-items-center">
             <Form onSubmit={addUserData}>
-                  <Form.Group className="mb-3 col-6 container" controlId="formBasicName">
+                  <Form.Group className="mb-3 col-12 container" controlId="formBasicName">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control value={userData.name} type="text" placeholder="Name" onChange={(event) => setUserData((prevUserData) => ({
                                                                               ...prevUserData, name: event.target.value
                                                                               }))}/>
                   </Form.Group>
-                  <Form.Group className="mb-3 col-6 container" controlId="formBasicEmail">
+                  <Form.Group className="mb-3 col-12 container" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control value={userData.email} type="email" placeholder="Enter email"  onChange={(event) => setUserData((prevUserData) => ({
                                                                               ...prevUserData, email: event.target.value
@@ -76,25 +76,25 @@ const Questions = () => {
                   </div>                                                           
                   </Form.Group>
                 
-                  <Form.Group className="mb-3 col-6 container" controlId="formBasicTextArea">
+                  <Form.Group className="mb-3 col-12 container" controlId="formBasicTextArea">
                         <Form.Label>Question</Form.Label>
                         <Form.Control value={userData.question} as="textarea" placeholder="Enter you question here" rows={4} cols={40} onChange={(event) => setUserData((prevUserData) => ({
                                                                                                                         ...prevUserData, question: event.target.value
                                                                                                                   }))}/>
                   <div className="col-auto mb-3 d-flex justify-content-start">
-                  <Button variant="primary" type="submit" className='button-css'>
+                  <Button variant="primary" type="submit" className='button-css mt-3'>
                         Submit
                   </Button>
                   </div>                                                                                                
                   </Form.Group>
 
             </Form>
-            <div className="col-6">
+            <div className="col-12">
                   <Table striped bordered hover >
                         <thead>
                         <tr>
                         <th className="w-auto d-flex text-start">Client Name</th>
-                        <th className="w-auto table-fixed text-wrap text-start">Client Question</th>
+                        <th className="w-100 table-fixed text-wrap text-start">Client Question</th>
                         </tr>
                         </thead>
                         <tbody>
