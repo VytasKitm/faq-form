@@ -59,7 +59,7 @@ const Questions = () => {
             <div className="row container align-items-center">
             <Form onSubmit={addUserData}>
                   <Form.Group className="mb-3 col-12 container" controlId="formBasicName">
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label>Name</Form.Label>
                         <Form.Control value={userData.name} type="text" placeholder="Name" onChange={(event) => setUserData((prevUserData) => ({
                                                                               ...prevUserData, name: event.target.value
                                                                               }))}/>
